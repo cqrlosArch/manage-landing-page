@@ -1,0 +1,96 @@
+extends templates/template.pug
+
+block title
+  title Manage landing page
+
+block content
+  .wrapper
+    header.header
+      .brand: img(src="./images/logo.svg" alt="brang logo").img.img--logo
+      nav: ul.nav-main.hiddenModal
+        li.nav-main__item: a.nav-main__link Pricing
+        li.nav-main__item: a.nav-main__link Product
+        li.nav-main__item: a.nav-main__link About Us
+        li.nav-main__item: a.nav-main__link Careers
+        li.nav-main__item: a.nav-main__link Community
+      button(type="button").button.button--started-orange.button-header Get Started
+      img(src="images/icon-hamburger.svg" alt="icon" data-mode="close")#hamburger.hamburger
+    main.main
+      section(aria-label="Website summary").section.section--first
+        article.summary
+          h1.summary__title Bring everyone together to build better products.
+          p.summary__subtitle Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+          button(type="button").button.button--started-orange Get Started
+        artile.graphics
+          img(src="images/illustration-intro.svg" alt="illustration-intro").img.img--illustration
+      section(aria-label="Description Manage").section.section--second
+        article.description
+          h2.description__title   What’s different about Manage?
+          p.description__subtitle Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. 
+        ol.list-attributes
+          li.attribute
+            span.attribute__position 01
+            h3.attribute__title Track company-wide progress
+            p.attribute__text See how your day-to-day tasks fit into the wider vision. Go from tracking progress at th milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+          li.attribute
+            span.attribute__position 02
+            h3.attribute__title Advanced built-in reports
+            p.attribute__text Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+          li.attribute
+            span.attribute__position 03
+            h3.attribute__title Everything you need in one place
+            p.attribute__text Everything you need in one place Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
+      section(aria-label="Testimonials").section.section--third
+        #slider.testimonials-slider
+          .card
+            img(src="./images/avatar-anisha.png" alt="anisha").img.img--avatar
+            p.card__name Anisha Li
+            p.card__text “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
+          .card
+            img(src="./images/avatar-ali.png" alt="ali").img.img--avatar
+            p.card__name Ali Bravo
+            p.card__text  “We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”
+          .card
+            img(src="./images/avatar-richard.png" alt="richard").img.img--avatar
+            p.card__name Richard Watts
+            p.card__text “Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”
+          .card
+            img(src="./images/avatar-shanai.png" alt="shanai").img.img--avatar
+            p.card__name Shanai Gough
+            p.card__text “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”
+        .pagination#pagination
+          span(data-card="1").pagination__icon.pagination__icon--active
+          span(data-card="2").pagination__icon
+          span(data-card="3").pagination__icon
+          span(data-card="4").pagination__icon
+        button(type="button").button.button--started-orange.button-slider Get Started
+  section(aria-label="simplify banner").banner
+    p.banner__text Simplify how your team works today.
+    button(type="button").button.button--started-white Get Started
+  footer.footer
+    section.footer-logos
+      .brand: img(src="./images/logo-footer.svg" alt="brang logo").img.img--logo
+      .social
+        img(src="./images/icon-facebook.svg" alt="").icon
+        img(src="./images/icon-youtube.svg" alt="").icon
+        img(src="./images/icon-twitter.svg" alt="").icon
+        img(src="./images/icon-pinterest.svg" alt="").icon
+        img(src="./images/icon-instagram.svg" alt="").icon
+    section.footer-links
+      ul.list-link
+        li.footer-item: a(href="").footer-link Home
+        li.footer-item: a(href="").footer-link Pricing
+        li.footer-item: a(href="").footer-link Products
+        li.footer-item: a(href="").footer-link About Us
+      ul.list-link
+        li.footer-item: a(href="").footer-link Carrers
+        li.footer-item: a(href="").footer-link Community
+        li.footer-item: a(href="").footer-link Privacy Policy
+    section.footer-subscription
+      form#form.form
+        input(type="email" name="email" placeholder="Updates in your inbox..." title="Formato email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required).form__input
+        button.form__button Go
+      span.copyright Copyright 2020. All Rights Reserved
+
+
+

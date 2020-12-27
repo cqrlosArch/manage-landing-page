@@ -1,0 +1,64 @@
+.testimonials-slider {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  height: 300px;
+  width: 2000px;
+  left: -15%;
+  transition: transform 1s ease-in-out;
+  overflow: hidden;
+  @media screen and (max-width: 760px) {
+    transform: translateX(0);
+    left: 0;
+    width: auto;
+  }
+}
+
+.slider {
+  transform: translateX(-35%);
+
+  @media screen and (max-width: 760px) {
+    transform: none;
+    &--1 {
+      transform: translateX(0);
+    }
+    &--2 {
+      transform: translateX(-25%);
+    }
+    &--3 {
+      transform: translateX(-50%);
+    }
+    &--4 {
+      transform: translateX(-75%);
+    }
+  }
+}
+
+.pagination {
+  display: none;
+  width: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  @media screen and (max-width: 760px) {
+    display: flex;
+    &__icon {
+      width: 7px;
+      height: 7px;
+      border: 1px solid $bg-button;
+      border-radius: 50%;
+      cursor: pointer;
+      &--active {
+        background-color: $bg-button;
+      }
+    }
+  }
+}

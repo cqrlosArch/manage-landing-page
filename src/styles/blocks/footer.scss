@@ -1,0 +1,142 @@
+.footer {
+  height: 200px;
+  background: $text-link;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  @media screen and (max-width: 760px) {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &-logos {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    @media screen and (max-width: 760px) {
+      order: 3;
+      height: 150px;
+    }
+    .social {
+      cursor: pointer;
+      width: 180px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      @media screen and (max-width: 760px) {
+        width: 400px;
+        margin: 0;
+
+        .icon {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  &-links {
+    width: 500px;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    @media screen and (max-width: 760px) {
+      order: 2;
+      justify-items: center;
+      max-width: 360px;
+    }
+    .list-link {
+      list-style: none;
+      margin: 0;
+      .footer-item {
+        padding: 0.5rem 0;
+      }
+      .footer-link {
+        text-decoration: none;
+        font-size: 12px;
+        color: #fff;
+      }
+    }
+  }
+  &-subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100px;
+    height: 120px;
+    @media screen and (max-width: 760px) {
+      order: 1;
+    }
+    .form {
+      display: flex;
+      min-width: 200px;
+      width: 300px;
+      justify-content: space-around;
+      position: relative;
+      @media screen and (max-width: 760px) {
+        width: 400px;
+      }
+      &__input {
+        outline: none;
+        border: none;
+        padding: 0.8rem 1rem;
+        border-radius: 30px;
+        font-size: 14px;
+        @media screen and (max-width: 760px) {
+          width: 250px;
+        }
+      }
+      &__button {
+        background-color: $bg-button;
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        padding: 0.8rem 1rem;
+        font-size: 12px;
+        color: #fff;
+        cursor: pointer;
+        @media screen and (max-width: 760px) {
+          padding: 0.8rem 2rem;
+        }
+      }
+      .tooltip {
+        position: absolute;
+        width: 200px;
+        height: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 16px;
+        animation: toUp 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &--active {
+          display: block;
+        }
+      }
+    }
+    .copyright {
+      font-size: 12px;
+      text-align: right;
+      color: $pattern-secondary;
+      @media screen and (max-width: 760px) {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes toUp {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  100% {
+    top: -30px;
+    opacity: 1;
+  }
+}
