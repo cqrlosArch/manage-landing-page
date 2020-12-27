@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://windbnb-app.cqrlosarch.vercel.app/" target="_blank">
+    <a href="https://manage-landing-page.cqrlosarch.vercel.app/" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/ZdoNDa90lED3Pa6S9EkP" target="_blank">
+    <a href="https://www.frontendmentor.io/solutions/mobile-first-site-using-vanilla-js-and-sass-RQVXZmd9h" target="_blank">
       Solution
     </a>
     <span> | </span>
@@ -46,15 +46,15 @@
 ### Built With
 
 
-
-- [React](https://reactjs.org/)
-- [Styled Components](https://styled-components.com/)
+- [JavaScript Vanilla](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [Sass](https://sass-lang.com/)
+- [Workflow Webpack](https://github.com/cqrlosArch/webpack-workflow)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [Frontendmentor](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD) was to build an application to complete the given user stories.
 
 ## How To Use
 
@@ -64,7 +64,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/cqrlosArch/windbnb-app.git
+$ git clone https://github.com/cqrlosArch/manage-landing-page
 
 # Install dependencies
 $ yarn install
